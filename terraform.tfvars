@@ -39,7 +39,7 @@ user_id = "ocid1.user.oc1..aaaaaaaaoj3k4zp24w2aryx7z46gzhw2yxf2lrvcj3om6cikwb6k4
 fingerprint = "25:93:69:40:2f:5b:d2:25:0e:eb:f3:41:ea:cb:18:02"
 
 # this is the full path on your local system to the private key used for the API key pair
-private_key_path = "/Users/cotudor/.oci/oci_api_key_cotud.pem"
+private_key_path = "keys/oci_api_key_cotud.pem"
 
 # region (us-phoenix-1, ca-toronto-1, etc)
 region = "eu-frankfurt-1"
@@ -149,10 +149,10 @@ compute_compartment_id = null
 cluster_size = 2
 
 # Compute instances ssh public key
-ssh_public_key_path = "~/.ssh/cos_key.pub"
+ssh_public_key_path = "keys/cos_key.pub"
 
 # Compute instances ssh private key
-ssh_private_key_path = "~/.ssh/cos_key.openssh"
+ssh_private_key_path = "keys/cos_key.openssh"
 
 # The name of the shape to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the specific shape name in the target region.
 shape = "VM.Standard2.1"
