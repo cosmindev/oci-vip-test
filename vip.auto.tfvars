@@ -7,7 +7,7 @@
 #############################
 
 # default compartment 
-default_compartment_id = "<default_compartment_ocid>"
+default_compartment_id = "ocid1.compartment.oc1..aaaaaaaacnmuyhg2mpb3z6v6egermq47nai3jk5qaoieg3ztinqhamalealq"
 
 # iam compartment - if null then default_compartment_id will be used
 iam_compartment_id = null
@@ -49,7 +49,7 @@ aditional_block_volume_size = 55
 network_compartment_id = null
 
 # the VCN id where the VIP network components will be provisioned
-vcn_id = "<vcn-ocid>"
+vcn_id = "ocid1.vcn.oc1.eu-frankfurt-1.amaaaaaac3adhhqaflbvd4jxuvkpwzwxd7r33ndprlxedneoakau6eh4gq2q"
 
 # the route table attached to the VIP subnet. Configuration supports both public internet routes and private routes
 oci_vip_route_table = {
@@ -58,7 +58,7 @@ oci_vip_route_table = {
     dst      = "0.0.0.0/0"
     dst_type = "CIDR_BLOCK"
     # next hop can be an Internet Gateway or other Gateway(ex. DRG)
-    next_hop_id = "<IG-OCID>"
+    next_hop_id = "ocid1.internetgateway.oc1.eu-frankfurt-1.aaaaaaaaagq6h5w3su6certxerl34f4xluf67nlxh4phxtev5jahsnaznowa"
   }]
 }
 
@@ -107,16 +107,16 @@ compute_compartment_id = null
 cluster_size = 6
 
 # Compute instances ssh public key
-ssh_public_key_path = "<ssh-public-key>"
+ssh_public_key_path = "~/.ssh/cos_key.pub"
 
 # Compute instances ssh private key
-ssh_private_key_path = "<ssh-private-key>"
+ssh_private_key_path = "~/.ssh/cos_key.openssh"
 
 # The name of the shape to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the specific shape name in the target region.
 shape = "VM.Standard2.1"
 
 # The name of the image to be used for all the provisioned compute instances. The automation will automatically figure out the OCID for the specific image name in the target region.
-image_name = "Oracle-Linux-7.7-2020.01.28-0"
+image_name = "Oracle-Linux-7.8-2020.06.30-0"
 
 
 # OCI VIP Config
