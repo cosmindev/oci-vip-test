@@ -15,7 +15,7 @@ Thumbs.db
 .terraform
 terraform.tfstate
 *.tfstate*
-terraform.tfvars
+#terraform.tfvars
 
 # Test 
 sdf-oci-terraform-test/

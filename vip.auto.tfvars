@@ -104,7 +104,7 @@ fss_mount_point = "/u02"
 compute_compartment_id = null
 
 # The number of cluster nodes to be provisioned
-cluster_size = 6
+cluster_size = 2
 
 # Compute instances ssh public key
 ssh_public_key_path = "~/.ssh/cos_key.pub"
