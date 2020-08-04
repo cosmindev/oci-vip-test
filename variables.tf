@@ -22,7 +22,7 @@ variable "fingerprint" {
 }
 
 # this is the full path on your local system to the private key used for the API key pair
-variable "private_key_path" {
+variable "private_key" {
   description = "This is the full path on your local system to the private key used for the API key pair"
 }
 
