@@ -86,8 +86,8 @@ module "oci-vip-compute" {
 
   cluster_size          = var.cluster_size
   names_prefix          = var.names_prefix
-  ssh_private_key_path  = var.ssh_private_key_path
-  ssh_public_key_path   = var.ssh_public_key_path
+  ssh_private_key       = var.ssh_private_key
+  ssh_public_key        = var.ssh_public_key
   shape                 = var.shape
   image_name            = var.image_name
   volumes_backup_policy = var.volumes_backup_policy
